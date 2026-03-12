@@ -3,129 +3,175 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Movie Magic Hub</title>
+<title>MovieVerse</title>
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Arial, sans-serif;
-background:#0f172a;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#141414;
 color:white;
 }
 
+/* HEADER */
+
 header{
-background:#020617;
-padding:20px;
-text-align:center;
-font-size:28px;
-font-weight:bold;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:black;
 }
 
+.logo{
+font-size:26px;
+font-weight:bold;
+color:red;
+}
+
+nav a{
+margin-left:20px;
+color:white;
+text-decoration:none;
+}
+
+/* HERO */
+
 .hero{
-text-align:center;
-padding:60px 20px;
+height:60vh;
+background:linear-gradient(to top,black,transparent),
+url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba");
+background-size:cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding-left:50px;
 }
 
 .hero h1{
-font-size:36px;
-color:#38bdf8;
+font-size:50px;
 }
 
 .hero p{
-color:#cbd5f5;
 margin-top:10px;
+color:#ddd;
 }
 
-.telegram-btn{
-display:inline-block;
-margin-top:30px;
-padding:15px 35px;
-background:#22c55e;
+.btn{
+margin-top:20px;
+padding:12px 30px;
+background:red;
 color:white;
 text-decoration:none;
-font-size:18px;
-border-radius:8px;
+border-radius:5px;
+display:inline-block;
 }
 
-.telegram-btn:hover{
-background:#16a34a;
+/* MOVIE GRID */
+
+.section{
+padding:40px;
 }
 
 .movies{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 gap:20px;
-padding:40px;
 }
 
 .movie{
-background:#1e293b;
-padding:10px;
-border-radius:8px;
-text-align:center;
+overflow:hidden;
+border-radius:10px;
+transition:0.3s;
+cursor:pointer;
 }
 
 .movie img{
 width:100%;
-border-radius:5px;
+display:block;
 }
+
+.movie:hover{
+transform:scale(1.1);
+}
+
+/* FOOTER */
 
 footer{
 text-align:center;
 padding:20px;
-background:#020617;
+background:black;
 margin-top:40px;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
-🎬 Movie Magic Hub
+
+<div class="logo">🎬 MovieVerse</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Movies</a>
+<a href="#">Series</a>
+<a href="#">Trending</a>
+</nav>
+
 </header>
 
 <section class="hero">
 
-<h1>Latest Movies & Web Series</h1>
+<h1>Unlimited Movies</h1>
 
-<p>Join our Telegram channel for daily movie updates</p>
+<p>Join our Telegram for latest updates</p>
 
-<a class="telegram-btn" href="https://t.me/yourchannel">
-Join Telegram
-</a>
+<a class="btn" href="https://t.me/yourchannel">Join Telegram</a>
 
 </section>
 
-<section class="movies">
+<div class="section">
+
+<h2>Trending Movies</h2>
+
+<div class="movies">
 
 <div class="movie">
-<img src="https://via.placeholder.com/150">
-<p>Latest Movie</p>
+<img src="https://via.placeholder.com/200x300">
 </div>
 
 <div class="movie">
-<img src="https://via.placeholder.com/150">
-<p>New Web Series</p>
+<img src="https://via.placeholder.com/200x300">
 </div>
 
 <div class="movie">
-<img src="https://via.placeholder.com/150">
-<p>Trending Movie</p>
+<img src="https://via.placeholder.com/200x300">
 </div>
 
 <div class="movie">
-<img src="https://via.placeholder.com/150">
-<p>HD Movies</p>
+<img src="https://via.placeholder.com/200x300">
 </div>
 
-</section>
+<div class="movie">
+<img src="https://via.placeholder.com/200x300">
+</div>
+
+</div>
+
+</div>
 
 <footer>
-© 2026 Movie Magic Hub
+
+© 2026 MovieVerse
+
 </footer>
 
 </body>
