@@ -64,6 +64,26 @@ color:black;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
+transition:0.3s;
+}
+
+.join-btn:hover{
+background:#00bcd4;
+}
+
+/* SEARCH */
+
+.search{
+text-align:center;
+margin-top:20px;
+}
+
+.search input{
+width:60%;
+padding:10px;
+border-radius:20px;
+border:none;
+outline:none;
 }
 
 /* MOVIE GRID */
@@ -87,6 +107,7 @@ transition:0.3s;
 
 .movie:hover{
 transform:scale(1.05);
+box-shadow:0 0 15px #00e5ff;
 }
 
 .movie img{
@@ -158,6 +179,10 @@ color:#777;
 
 </section>
 
+<div class="search">
+<input type="text" placeholder="Search movies...">
+</div>
+
 <div class="container">
 
 <h2>Trending Movies</h2>
@@ -165,33 +190,23 @@ color:#777;
 <div class="movies">
 
 <div class="movie">
-<img src="https://via.placeholder.com/200x300">
-<p>Movie Title</p>
+<img src="https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg">
+<p>Spider Man</p>
 </div>
 
 <div class="movie">
-<img src="https://via.placeholder.com/200x300">
-<p>New Web Series</p>
+<img src="https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg">
+<p>Doctor Strange</p>
 </div>
 
 <div class="movie">
-<img src="https://via.placeholder.com/200x300">
-<p>HD Movie</p>
+<img src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg">
+<p>Avengers</p>
 </div>
 
 <div class="movie">
-<img src="https://via.placeholder.com/200x300">
-<p>Action Movie</p>
-</div>
-
-<div class="movie">
-<img src="https://via.placeholder.com/200x300">
-<p>Comedy Movie</p>
-</div>
-
-<div class="movie">
-<img src="https://via.placeholder.com/200x300">
-<p>Hollywood Movie</p>
+<img src="https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg">
+<p>Joker</p>
 </div>
 
 </div>
