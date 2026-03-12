@@ -3,19 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MovieVerse</title>
+<title>Cinema Hub</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-}
-
 body{
-background:#141414;
+margin:0;
+font-family:Arial, sans-serif;
+background:#0b0b0b;
 color:white;
 }
 
@@ -25,80 +20,104 @@ header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 40px;
-background:black;
+padding:15px 30px;
+background:#111;
+border-bottom:1px solid #222;
 }
 
 .logo{
-font-size:26px;
+font-size:22px;
+color:#00e5ff;
 font-weight:bold;
-color:red;
 }
 
 nav a{
 margin-left:20px;
-color:white;
 text-decoration:none;
+color:white;
+font-size:14px;
 }
 
 /* HERO */
 
 .hero{
-height:60vh;
-background:linear-gradient(to top,black,transparent),
-url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba");
-background-size:cover;
-display:flex;
-flex-direction:column;
-justify-content:center;
-padding-left:50px;
+text-align:center;
+padding:70px 20px;
+background:linear-gradient(to bottom,#111,#000);
 }
 
 .hero h1{
-font-size:50px;
+font-size:36px;
+margin-bottom:10px;
 }
 
 .hero p{
-margin-top:10px;
-color:#ddd;
+color:#aaa;
 }
 
-.btn{
-margin-top:20px;
-padding:12px 30px;
-background:red;
-color:white;
-text-decoration:none;
-border-radius:5px;
+.join-btn{
 display:inline-block;
+margin-top:25px;
+padding:12px 30px;
+background:#00e5ff;
+color:black;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
 }
 
 /* MOVIE GRID */
 
-.section{
+.container{
 padding:40px;
 }
 
 .movies{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
 gap:20px;
 }
 
 .movie{
+background:#111;
+border-radius:8px;
 overflow:hidden;
-border-radius:10px;
 transition:0.3s;
-cursor:pointer;
+}
+
+.movie:hover{
+transform:scale(1.05);
 }
 
 .movie img{
 width:100%;
-display:block;
 }
 
-.movie:hover{
-transform:scale(1.1);
+.movie p{
+text-align:center;
+padding:10px;
+font-size:14px;
+}
+
+/* TELEGRAM SECTION */
+
+.telegram{
+background:#111;
+text-align:center;
+padding:50px 20px;
+margin-top:40px;
+}
+
+.telegram h2{
+margin-bottom:10px;
+}
+
+.telegram a{
+background:#0088cc;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+border-radius:25px;
 }
 
 /* FOOTER */
@@ -106,39 +125,40 @@ transform:scale(1.1);
 footer{
 text-align:center;
 padding:20px;
-background:black;
-margin-top:40px;
+background:#000;
+color:#777;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
 
-<div class="logo">🎬 MovieVerse</div>
+<div class="logo">🎬 CinemaHub</div>
 
 <nav>
 <a href="#">Home</a>
 <a href="#">Movies</a>
-<a href="#">Series</a>
-<a href="#">Trending</a>
+<a href="#">Web Series</a>
+<a href="#">Contact</a>
 </nav>
 
 </header>
 
 <section class="hero">
 
-<h1>Unlimited Movies</h1>
+<h1>Latest Movies & Web Series</h1>
 
-<p>Join our Telegram for latest updates</p>
+<p>Watch updates and join our Telegram channel</p>
 
-<a class="btn" href="https://t.me/yourchannel">Join Telegram</a>
+<a class="join-btn" href="https://t.me/yourchannel">Join Telegram</a>
 
 </section>
 
-<div class="section">
+<div class="container">
 
 <h2>Trending Movies</h2>
 
@@ -146,31 +166,50 @@ margin-top:40px;
 
 <div class="movie">
 <img src="https://via.placeholder.com/200x300">
+<p>Movie Title</p>
 </div>
 
 <div class="movie">
 <img src="https://via.placeholder.com/200x300">
+<p>New Web Series</p>
 </div>
 
 <div class="movie">
 <img src="https://via.placeholder.com/200x300">
+<p>HD Movie</p>
 </div>
 
 <div class="movie">
 <img src="https://via.placeholder.com/200x300">
+<p>Action Movie</p>
 </div>
 
 <div class="movie">
 <img src="https://via.placeholder.com/200x300">
+<p>Comedy Movie</p>
+</div>
+
+<div class="movie">
+<img src="https://via.placeholder.com/200x300">
+<p>Hollywood Movie</p>
 </div>
 
 </div>
 
 </div>
+
+<section class="telegram">
+
+<h2>Join Our Telegram Channel</h2>
+<p>Daily movie updates and new releases</p>
+
+<a href="https://t.me/yourchannel">Join Now</a>
+
+</section>
 
 <footer>
 
-© 2026 MovieVerse
+© 2026 CinemaHub
 
 </footer>
 
